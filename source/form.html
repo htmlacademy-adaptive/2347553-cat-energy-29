@@ -6,32 +6,47 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="img/logo.svg" width="190" height="38" alt="Логотип Кэт Энерджи">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/logo-img.svg" width="33" height="38" alt="">
+        <img src="img/logo-text.svg" width="101" height="18" alt="">
+        <span class="visually-hidden">Логотип магазина Кэт Энерджи.</span>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link">главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">подбор программы</a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <main class="main-container"></main>
+    <main class="form-container">
+
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <p class="contacts__lead">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <!--карта-->
+        </div>
+      </section>
+    </main>
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo">
+        <a class="main-footer__logo" href="index.html">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип магазина Кэт Энерджи.">
         </a>
         <div class="main-footer__social social">
