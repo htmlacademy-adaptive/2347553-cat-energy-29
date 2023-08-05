@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Cat Energy</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <img src="img/logo-img.svg" width="33" height="38" alt="">
-        <img src="img/logo-text.svg" width="101" height="18" alt="">
+        <img class="main-header__logo--img" src="img/logo-img.svg" width="33" height="38" alt="">
+        <img class="main-header__logo--text" src="img/logo-text.svg" width="101" height="18" alt="">
         <span class="visually-hidden">Логотип магазина Кэт Энерджи.</span>
       </a>
       <nav class="main-nav">
@@ -30,7 +31,7 @@
     </header>
 
     <main class="form-container">
-      <h1 class="form-container__title">Подбор программы</h1>
+      <h1 class="form-container__title title">Подбор программы</h1>
       <p class="form-container__lead">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="form__group">
@@ -85,13 +86,13 @@
             <li class="form__item">
               <label class="form__label">
                 E-mail:*
-                <input class="form__input form__input--contacts" type="email" name="email" value="kuklachev@gmail.com" required>
+                <input class="form__input form__input--email" type="email" name="email" value="kuklachev@gmail.com" required>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
                 Телефон:*
-                <input class="form__input form__input--contacts" type="tel" name="phone" value="8 (960) 900-60-90" required>
+                <input class="form__input form__input--tel" type="tel" name="phone" value="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
@@ -99,7 +100,7 @@
         <fieldset class="form__group">
           <legend class="form__title">Комментарий</legend>
           <label class="form__label">
-            <input class="form__input form__input--comment" type="text" name="comment">
+            <textarea class="form__input form__input--comment" name="comment">Расскажите обо всех повадках кота</textarea>
           </label>
         </fieldset>
         <fieldset class="form__group">
@@ -140,15 +141,15 @@
           <h2 class="visually-hidden">Контактная информация</h2>
           <p class="contacts__lead">Приглашаем к сотрудничеству дилеров!</p>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-          <!--карта-->
         </div>
+        <img src="img/map.png" width="320" height="362" alt="Карта">
       </section>
     </main>
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo" href="index.html">
-          <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип магазина Кэт Энерджи.">
+        <a class="main-footer__logo-link">
+          <img class="main-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип магазина Кэт Энерджи.">
         </a>
         <ul class="main-footer__social social">
           <li class="social__item">
@@ -167,7 +168,7 @@
             </a>
           </li>
         </ul>
-        <a class="main-footer__academy">HTML Academy</a>
+        <a class="main-footer__academy-link" href="#">HTML Academy</a>
       </div>
     </footer>
   </body>
