@@ -1,9 +1,17 @@
 .main-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 13px 20px 15px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 55px 110px;
+  }
 }
 
 .main-header__logo {
@@ -11,11 +19,28 @@
   align-items: center;
 
   &--img {
-    display: block;
+    display: inline-block;
     margin-right: 56px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 13px;
+      width: 60px;
+      height: 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: 14px;
+      width: 70px;
+      height: 59px;
+    }
   }
 
   &--text {
     display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 101px;
+    height: 18px;
   }
 }

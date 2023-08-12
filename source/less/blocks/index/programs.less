@@ -1,5 +1,9 @@
 .programs__wrapper {
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
 }
 
 .programs__item {
@@ -9,6 +13,11 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 77px 52px 53px;
+    margin-bottom: 30px;
   }
 }
 
@@ -22,11 +31,23 @@
   margin: 0;
   margin-left: 70px;
   margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
 }
 
 .programs__description {
   margin: 0;
   margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 48px;
+    max-width: 340px;
+  }
 }
 
 .programs__link {
@@ -37,4 +58,9 @@
   color: #000000;
   display: block;
   padding: 4px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

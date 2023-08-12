@@ -4,12 +4,24 @@
 
 .main-footer__wrapper {
   padding: 40px 20px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 55px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-footer__logo-link {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  margin: 0 auto;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__logo {
@@ -21,6 +33,12 @@
   padding: 0;
   list-style-type: none;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
 }
 
 .main-footer__academy-link {
@@ -29,7 +47,13 @@
   color: inherit;
   padding: 7px 0;
   display: block;
+  text-align: start;
   background-image: url("../img/htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: right;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    width: 168px;
+  }
 }
