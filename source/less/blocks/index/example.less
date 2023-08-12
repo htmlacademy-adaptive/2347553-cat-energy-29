@@ -56,7 +56,7 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
+    grid-template-columns: 162px 162px auto;
     margin-bottom: 104px;
     gap: 43px;
   }
@@ -71,7 +71,6 @@
 
   @media (min-width: @tablet-width) {
     padding: 14px 0 19px;
-    width: 162px;
   }
 }
 
@@ -123,9 +122,9 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    flex-grow: 1;
     text-align: end;
-    align-self: center;
+    padding-top: 11px;
+    grid-column: auto;
   }
 }
 
