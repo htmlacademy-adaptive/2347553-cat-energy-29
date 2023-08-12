@@ -1,11 +1,26 @@
+.contacts {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
 .contacts__wrapper {
   padding: 26px 20px;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    padding: 61px 70px;
+    padding: 60px 70px;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 80px;
+    background-color: #ffffff;
+    gap: 85px;
+    position: absolute;
+    left: 110px;
+    top: 95px;
   }
 }
 
@@ -21,7 +36,9 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    max-width: none;
     width: 163px;
+    padding: 1px 0;
   }
 }
 
