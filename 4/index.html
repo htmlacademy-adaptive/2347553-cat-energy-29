@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css">
     <base href="https://htmlacademy-adaptive.github.io/2347553-cat-energy-29/4/">
@@ -17,25 +18,15 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <ul class="main-nav__list main-nav__list--open">
-          <li class="main-nav__item main-nav__item--header">
-            <a class="main-header__logo">
-              <img class="main-header__logo--img" src="img/logo-img.svg" width="33" height="38" alt="">
-              <img class="main-header__logo--text" src="img/logo-text.svg" width="101" height="18" alt="">
-              <span class="visually-hidden">Логотип магазина Кэт Энерджи.</span>
-            </a>
-            <button class="main-nav__toggle main-nav__toggle--close" type="button">
-              <span class="visually-hidden">Закрыть меню.</span>
-            </button>
-          </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link">Главная</a>
+        <ul class="main-nav__list main-nav__list--close">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--index main-nav__link--current">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link main-nav__link--index" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--index" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -69,21 +60,33 @@
 
       <section class="guide">
         <div class="guide__wrapper">
-          <h2 class="guide__title subtitle">Как это работает</h2>
+          <h2 class="guide__title title">Как это работает</h2>
           <ul class="guide__list">
-            <li class="guide__item guide__item--leaf">Функциональное питание содержит только полезные питательные вещества.</li>
-            <li class="guide__item guide__item--glass">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-            <li class="guide__item guide__item--cutlery">Замените один-два приема обычной еды на наше функциональное питание.</li>
-            <li class="guide__item guide__item--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+            <li class="guide__item guide__item--leaf">
+              <span class="guide__description">Функциональное питание содержит только полезные питательные вещества.</span>
+              <span class="guide__number">1</span>
+            </li>
+            <li class="guide__item guide__item--glass">
+              <span class="guide__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</span>
+              <span class="guide__number">2</span>
+            </li>
+            <li class="guide__item guide__item--cutlery">
+              <span class="guide__description">Замените один-два приема обычной еды на наше функциональное питание.</span>
+              <span class="guide__number">3</span>
+            </li>
+            <li class="guide__item guide__item--clock">
+              <span class="guide__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</span>
+              <span class="guide__number">4</span>
+            </li>
           </ul>
         </div>
       </section>
 
       <section class="example">
         <div class="example__wrapper">
-          <h2 class="example__title subtitle">Живой пример</h2>
+          <h2 class="example__title title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <ul class="example__list">
+          <div class="example__list">
             <dl class="example__description">
               <dt class="example__value">5 кг</dt>
               <dd class="example__option">Cнижение веса</dd>
@@ -92,8 +95,8 @@
               <dt class="example__value">60 дней</dt>
               <dd class="example__option">Затрачено времени</dd>
             </dl>
-            <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
-          </ul>
+            <p class="example__cost">Затраты на питание: <span class="example__price">15 000 РУБ.</span></p>
+          </div>
           <img class="example__img" src="img/slider.png" width="280" height="256" alt="Толстый и худой кот">
         </div>
       </section>
@@ -102,7 +105,7 @@
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Контактная информация</h2>
           <p class="contacts__lead">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
         </div>
         <img class="contacts__img" src="img/map.png" width="320" height="362" alt="Карта">
       </section>
