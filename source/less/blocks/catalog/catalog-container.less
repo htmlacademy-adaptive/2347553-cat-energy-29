@@ -6,4 +6,22 @@
 .catalog-container__title {
   padding: 27px 20px 41px;
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    padding: 40px 30px 84px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 188px 110px 84px;
+  }
+}
+
+.catalog-container__wrapper {
+  @media (min-width: @desktop-width) {
+    padding: 76px 110px 87px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
