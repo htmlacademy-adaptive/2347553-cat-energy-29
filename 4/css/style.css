@@ -1200,7 +1200,7 @@ a {
     row-gap: 32px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .form__group--extra .form__list {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
