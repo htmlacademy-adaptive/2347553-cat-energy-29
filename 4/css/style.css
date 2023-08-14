@@ -1346,7 +1346,7 @@ a {
     padding: 10px 19px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .form__textarea {
     padding: 8px 19px;
   }
