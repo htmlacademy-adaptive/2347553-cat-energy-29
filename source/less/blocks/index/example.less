@@ -63,6 +63,7 @@
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 124px);
+  justify-content: center;
   column-gap: 32px;
   row-gap: 34px;
   text-align: center;
@@ -170,11 +171,11 @@
 
 .example__img {
   display: block;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     width: 560px;
     height: 512px;
-    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {

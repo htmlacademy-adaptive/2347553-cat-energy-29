@@ -31,6 +31,7 @@
   @media (min-width: @tablet-width) {
     grid-template-rows: none;
     grid-template-columns: repeat(2, 249px);
+    justify-content: center;
     row-gap: 37px;
     column-gap: 135px;
   }
@@ -47,7 +48,7 @@
 
   &::before {
     content: "";
-    width: 60px;
+    min-width: 60px;
     height: 60px;
     background-color: #68b738;
     background-repeat: no-repeat;
