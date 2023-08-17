@@ -30,8 +30,7 @@
 
   @media (min-width: @tablet-width) {
     grid-template-rows: none;
-    grid-template-columns: repeat(2, 249px);
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 37px;
     column-gap: 135px;
   }
@@ -58,7 +57,7 @@
     @media (min-width: @tablet-width) {
       width: 80px;
       height: 80px;
-      margin-right: 0;
+      margin-right: auto;
       margin-bottom: 31px;
       z-index: 1;
     }
@@ -93,7 +92,6 @@
 
 .guide__description {
   @media (min-width: @tablet-width) {
-    max-width: 245px;
     z-index: 1;
   }
 }
