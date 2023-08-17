@@ -1,0 +1,68 @@
+.contacts {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.contacts__wrapper {
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 70px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 80px;
+    background-color: #ffffff;
+    gap: 85px;
+    position: absolute;
+    left: 110px;
+    top: 95px;
+  }
+}
+
+.contacts__lead {
+  font-family: "Oswald", serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  max-width: 140px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: none;
+    width: 163px;
+    padding: 1px 0;
+  }
+}
+
+.contacts__address {
+  font-style: normal;
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    text-align: end;
+    width: 157px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+/*временное решение чтобы убрать отступ под картинкой-заглушкой*/
+.contacts__img {
+  display: block;
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 400px;
+  }
+}

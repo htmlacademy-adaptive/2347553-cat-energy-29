@@ -1,0 +1,21 @@
+.page {
+  width: 100%;
+}
+
+.page__body {
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "Lato", serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
