@@ -584,8 +584,7 @@ a {
 @media (min-width: 768px) {
   .guide__list {
     grid-template-rows: none;
-    grid-template-columns: repeat(2, 249px);
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 37px;
     column-gap: 135px;
   }
@@ -613,7 +612,7 @@ a {
   .guide__item::before {
     width: 80px;
     height: 80px;
-    margin-right: 0;
+    margin-right: auto;
     margin-bottom: 31px;
     z-index: 1;
   }
@@ -642,7 +641,6 @@ a {
 }
 @media (min-width: 768px) {
   .guide__description {
-    max-width: 245px;
     z-index: 1;
   }
 }
@@ -1809,6 +1807,7 @@ a {
     padding: 185px 40px 43px;
     background-position: top 56px center, center, center;
     text-align: center;
+    min-width: 241px;
   }
 }
 /*# sourceMappingURL=style.css.map */
