@@ -5,6 +5,18 @@
   padding: 13px 20px 15px;
   position: relative;
 
+  @media (max-width: 767.98px) {
+    &--nojs {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      padding: 0;
+
+      .main-header__logo {
+        padding: 13px 0 14px 20px;
+      }
+    }
+  }
+
   @media (min-width: @tablet-width) {
     padding: 25px 30px;
   }

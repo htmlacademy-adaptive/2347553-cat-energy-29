@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="main-header main-header--nojs">
       <a class="main-header__logo">
         <img class="main-header__logo--img" src="img/logo-img.svg" width="33" height="38" alt="">
         <img class="main-header__logo--text" src="img/logo-text.svg" width="101" height="18" alt="">
         <span class="visually-hidden">Логотип магазина Кэт Энерджи.</span>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle main-nav__toggle--close" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <ul class="main-nav__list main-nav__list--close">
@@ -135,5 +135,7 @@
         <a class="main-footer__academy-link" href="#">HTML Academy</a>
       </div>
     </footer>
+
+    <script src="js/toggle.js"></script>
   </body>
 </html>
