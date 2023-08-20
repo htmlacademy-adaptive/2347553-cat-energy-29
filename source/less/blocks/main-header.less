@@ -2,20 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 20px 15px;
   position: relative;
-
-  @media (max-width: 767.98px) {
-    &--nojs {
-      display: grid;
-      grid-template-columns: 210px 1fr;
-      padding: 0;
-
-      .main-header__logo {
-        padding: 13px 0 14px 20px;
-      }
-    }
-  }
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     padding: 25px 30px;
@@ -31,9 +19,10 @@
 .main-header__logo {
   display: flex;
   align-items: center;
+  padding: 13px 20px 14px;
 
   &--img {
-    display: inline-block;
+    display: block;
     margin-right: 56px;
 
     @media (min-width: @tablet-width) {
@@ -51,10 +40,15 @@
 
   &--text {
     display: block;
-  }
 
-  @media (min-width: @desktop-width) {
-    width: 101px;
-    height: 18px;
+    @media (min-width: @tablet-width) {
+      width: 101px;
+      height: 18px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 118px;
+      height: 21px;
+    }
   }
 }

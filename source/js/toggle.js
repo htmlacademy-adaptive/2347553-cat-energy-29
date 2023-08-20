@@ -1,9 +1,7 @@
-let headerMain = document.querySelector('.main-header');
 let navMain = document.querySelector('.main-nav');
 let navMainList = document.querySelector('.main-nav__list');
 let navToggle = document.querySelector('.main-nav__toggle');
 
-headerMain.classList.remove('main-header--nojs');
 navMain.classList.remove('main-nav--nojs');
 
 navToggle.addEventListener('click', function () {

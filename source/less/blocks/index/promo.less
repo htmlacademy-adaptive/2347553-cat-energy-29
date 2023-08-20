@@ -12,7 +12,7 @@
 
   @media (min-width: @desktop-width) {
     background-image: linear-gradient(to right, rgb(255, 255, 255) 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/index-background.png");
-    background-size: contain;
+    background-size: cover;
     background-position: center right;
   }
 }
@@ -50,6 +50,7 @@
 
   @media (min-width: @desktop-width) {
     margin-left: 0;
+    grid-row: ~"2 / 3";
   }
 }
 
@@ -71,6 +72,7 @@
   @media (min-width: @desktop-width) {
     margin-left: 0;
     margin-bottom: 52px;
+    grid-row: ~"3 / 4";
   }
 }
 
@@ -89,7 +91,7 @@
     width: 552px;
     height: 499px;
     margin: 0;
-    grid-row: ~"1 / 5";
+    grid-row: ~"1 / 6";
     grid-column: ~"2 / 3";
     margin-left: -49px;
   }
@@ -108,5 +110,6 @@
   @media (min-width: @desktop-width) {
     position: static;
     align-self: start;
+    grid-row: ~"4 / 5";
   }
 }
