@@ -3,11 +3,14 @@
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
-    padding: 70px 0;
+    padding: 70px 0 75px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-bottom: 87px;
+    padding: 76px 0 87px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
   }
 }
 
@@ -57,6 +60,7 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 79px;
+    grid-column: span 4;
 
     &::before {
       width: calc(50% - 650px);
@@ -82,7 +86,48 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0;
     margin-left: 110px;
-    margin-right: 325px;
+    grid-column: span 3;
+  }
+}
+
+.extra-products__gift {
+  padding: 35px 20px;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    padding: 70px 30px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin-right: 110px;
+  }
+}
+
+.extra-products__gift-description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  background-image: url("../img/gift.svg"), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/gift-background.png");
+  background-repeat: no-repeat;
+  background-position: top 59px center, center, center;
+  background-size: auto, auto, cover;
+  margin: 0;
+  padding: 187px 61px 43px 58px;
+
+  @media (min-width: @tablet-width) {
+    padding: 71px 125px 69px 421px;
+    text-align: start;
+    background-position: center left 78px, center, center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 185px 40px 43px;
+    background-position: top 56px center, center, center;
+    text-align: center;
+    width: 245px;
   }
 }
