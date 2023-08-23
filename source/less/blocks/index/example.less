@@ -73,10 +73,12 @@
     grid-template-columns: 162px 162px auto;
     margin-bottom: 104px;
     gap: 43px;
+    justify-content: stretch;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 162px 162px;
+    justify-content: start;
     margin-bottom: 0;
     column-gap: 42px;
     row-gap: 60px;
@@ -113,12 +115,11 @@
   line-height: 12px;
   text-transform: lowercase;
   margin: 0;
-  margin-inline-start: 0;
   padding: 0 8px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -14px;
+  top: calc(100% - 10px);
   z-index: 1;
   background-color: #eaeaea;
 
@@ -126,8 +127,8 @@
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
-    bottom: -5px;
-    white-space: nowrap;
+    top: calc(100% - 8px);
+    width: max-content;
     max-width: 152px;
   }
 
@@ -154,7 +155,8 @@
 
   @media (min-width: @desktop-width) {
     grid-column: ~"1 / -1";
-    text-align: start;
+    padding: 0;
+    display: flex;
   }
 }
 
@@ -165,7 +167,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: inline;
+    margin: 0;
+    margin-left: 63px;
   }
 }
 

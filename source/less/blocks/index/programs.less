@@ -8,14 +8,14 @@
   @media (min-width: @desktop-width) {
     padding: 82px 110px 71px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 80px;
   }
 }
 
 .programs__item {
   background-color: #f2f2f2;
-  padding: 30px 33px 18px 20px;
+  padding: 30px 20px 18px;
   margin-bottom: 20px;
   position: relative;
 
@@ -114,18 +114,6 @@
     padding-bottom: 55px;
     margin-bottom: 0;
   }
-
-  &--slim {
-    @media (min-width: @desktop-width) {
-      grid-column: ~"1 / 3";
-    }
-  }
-
-  &--pro {
-    @media (min-width: @desktop-width) {
-      grid-column: ~"3 / 5";
-    }
-  }
 }
 
 .programs__title {
@@ -154,11 +142,15 @@
 
 .programs__description {
   margin: 0;
-  margin-bottom: 38px;
+  padding-bottom: 22px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 0;
     margin-bottom: 48px;
-    max-width: 340px;
+    max-width: 42%;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -173,11 +165,23 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #000000;
-  display: block;
-  padding: 4px 0;
+  display: inline-block;
+  padding: 4px 47px 4px 0;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-right: 57px;
+  }
+
+  &:hover {
+    background-image: url("../img/arrow-long.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -1,6 +1,28 @@
 .main-nav {
-  padding: 7px 0;
+  padding: 7px 20px;
   display: flex;
+
+  @media (max-width: 767.98px) {
+    &--nojs {
+      padding: 0;
+      width: 100%;
+
+      .main-nav__toggle {
+        display: none;
+      }
+
+      .main-nav__list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background-color: #ffffff;
+        z-index: 1;
+      }
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -14,6 +36,11 @@
   background-repeat: no-repeat;
   background-color: #ffffff;
   background-position: center;
+  cursor: pointer;
+
+  &--open {
+    background-image: url("../img/toggle-close.svg");
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -24,17 +51,20 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  top: 100%;
-  left: 0;
-  background-color: #ffffff;
-  z-index: 1;
 
-  @media (max-width: @tablet-width) {
+  @media (max-width: 767.98px) {
+    &--open {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      top: 100%;
+      left: 0;
+      background-color: #ffffff;
+      z-index: 1;
+    }
+
     &--close {
       display: none;
     }
@@ -56,7 +86,30 @@
 }
 
 .main-nav__item {
-  padding: 22px 0 24px;
+  padding: 23px 0;
+  position: relative;
+
+  @media (max-width: 767.98px) {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &:last-child::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding: 14px 0 12px;
@@ -104,5 +157,13 @@
       bottom: 5px;
       background-color: #ffffff;
     }
+  }
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
   }
 }

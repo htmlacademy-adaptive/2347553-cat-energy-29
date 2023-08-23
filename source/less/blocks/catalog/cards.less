@@ -1,5 +1,7 @@
 .cards__item {
-  padding: 11px 0 14px;
+  padding: 20px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #ebebeb;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 13px;
@@ -9,6 +11,7 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     padding: 10px 37px 40px;
+    border: none;
     column-gap: 60px;
     row-gap: 0;
     background-image: linear-gradient(to top, #f2f2f2 84%, #ffffff 16%);
@@ -133,13 +136,25 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    row-gap: 12px;
+    row-gap: 7px;
   }
 }
 
 .cards__value {
   margin: 0;
-  justify-self: end;
+  text-align: end;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.cards__option {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .cards__link {
@@ -149,5 +164,13 @@
   &--more {
     background-color: #f2f2f2;
     color: #444444;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
 }
