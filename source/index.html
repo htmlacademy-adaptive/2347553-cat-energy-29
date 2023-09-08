@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon-32x32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
-        <img class="main-header__logo--img" src="img/logo-img.svg" width="33" height="38" alt="">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-img-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-img-tablet.svg">
+          <img class="main-header__logo--img" src="img/logo-img-mobile.svg" width="33" height="38" alt="">
+        </picture>
         <img class="main-header__logo--text" src="img/logo-text.svg" width="101" height="18" alt="">
         <span class="visually-hidden">Логотип магазина Кэт Энерджи.</span>
       </a>
@@ -36,7 +44,11 @@
         <div class="promo__wrapper">
           <h1 class="promo__title title">Функциональное питание для котов</h1>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <img class="promo__img" src="img/promo-food.png" width="280" height="270" alt="Упаковка еды для котов со вкусом курицы.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/promo-food-desktop.png 1x, img/promo-food-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/promo-food-tablet.png 1x, img/promo-food-tablet@2x.png 2x">
+            <img class="promo__img" src="img/promo-food-mobile.png" width="280" height="270" srcset="img/promo-food-mobile@2x.png 2x" alt="Упаковка еды для котов со вкусом курицы.">
+          </picture>
           <a class="promo__link button" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -96,7 +108,11 @@
             </dl>
             <p class="example__cost">Затраты на питание: <span class="example__price">15 000 РУБ.</span></p>
           </div>
-          <img class="example__img" src="img/slider.png" width="280" height="256" alt="Толстый и худой кот">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/slider-desktop.png 1x, img/slider-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x, img/slider-tablet@2x.png 2x">
+            <img class="example__img" src="img/slider-mobile.png" width="280" height="256" srcset="img/slider-mobile@2x.png 2x" alt="Толстый и худой кот">
+          </picture>
         </div>
       </section>
 
