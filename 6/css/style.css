@@ -942,7 +942,7 @@ a {
 @media (min-width: 1440px) {
   .example__img {
     position: absolute;
-    right: 0;
+    right: 110px;
     bottom: 85px;
   }
 }
