@@ -18,7 +18,9 @@
           <source media="(min-width: 768px)" srcset="img/logo-img-tablet.svg" width="60" height="50">
           <img class="main-header__logo--img" src="img/logo-img-mobile.svg" width="33" height="38" alt="">
         </picture>
-        <img class="main-header__logo--text" src="img/logo-text.svg" width="101" height="18" alt="">
+        <svg class="main-header__logo--text" width="101" height="18">
+          <use xlink:href="img/sprite.svg#logo-text"></use>
+        </svg>
         <span class="visually-hidden">Логотип магазина Кэт Энерджи.</span>
       </a>
       <nav class="main-nav main-nav--nojs">
@@ -264,8 +266,10 @@
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo-link" href="index.html">
-          <img class="main-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип магазина Кэт Энерджи.">
+        <a class="main-footer__logo-link">
+          <svg class="main-footer__logo" width="128" height="24">
+            <use xlink:href="img/sprite.svg#logo-text"></use>
+          </svg>
         </a>
         <ul class="main-footer__social social">
           <li class="social__item">
