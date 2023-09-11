@@ -30,6 +30,14 @@
     padding-bottom: 0;
     border: none;
   }
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
 }
 
 .main-footer__social {
@@ -58,10 +66,22 @@
   background-image: url("../img/htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: right;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin: 0;
     width: 168px;
+  }
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    mask-image: url("../img/htmlacademy.svg");
+    width: 27px;
+    height: 34px;
+    background-color: #68b738;
   }
 
   &:active {

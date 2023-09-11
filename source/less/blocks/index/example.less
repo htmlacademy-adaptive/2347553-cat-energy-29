@@ -19,6 +19,7 @@
 .example__wrapper {
   margin: 0 auto;
   padding: 25px 20px 40px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     padding: 45px 30px 101px;
@@ -181,4 +182,52 @@
     right: 110px;
     bottom: 85px;
   }
+}
+
+.example__range-bar {
+  position: absolute;
+  width: 4px;
+  height: 256px;
+  bottom: 40px;
+  left: 50%;
+  background-color: #666666;
+  border-radius: 2px;
+
+  @media (min-width: @tablet-width) {
+    height: 512px;
+    bottom: 101px;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 85px;
+    left: auto;
+    right: 388px;
+  }
+
+  &:hover {
+    background-color: #68b738;
+
+    .example__range-toggle {
+      background-image: url("../img/range-toggle-hover.svg");
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.example__range-toggle {
+  background-image: url("../img/range-toggle.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
