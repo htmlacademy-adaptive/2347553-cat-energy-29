@@ -273,6 +273,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
 
   &--check {
     position: relative;
@@ -284,6 +285,21 @@
 
     &:hover .form__check:not(:disabled) + .form__mark {
       border-color: #bababa;
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 12px;
+
+    @media (min-width: @tablet-width) {
+      right: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 16px;
     }
   }
 }
@@ -298,34 +314,6 @@
   padding: 13px 40px 12px 15px;
   margin-left: 13px;
   flex-grow: 1;
-
-  &--email {
-    background-image: url("../img/email.svg");
-    background-repeat: no-repeat;
-    background-position: center right 12px;
-
-    @media (min-width: @tablet-width) {
-      background-position: center right 14px;
-    }
-
-    @media (min-width: @desktop-width) {
-      background-position: center right 16px;
-    }
-  }
-
-  &--tel {
-    background-image: url("../img/phone.svg");
-    background-repeat: no-repeat;
-    background-position: center right 12px;
-
-    @media (min-width: @tablet-width) {
-      background-position: center right 14px;
-    }
-
-    @media (min-width: @desktop-width) {
-      background-position: center right 16px;
-    }
-  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -389,7 +377,7 @@
 }
 
 .form__check:checked + .form__mark--checkbox {
-  background-image: url("../img/checkmark.svg");
+  background-image: url("../img/sprite.svg#icon-checkmark");
   background-repeat: no-repeat;
   background-position: 1px;
 

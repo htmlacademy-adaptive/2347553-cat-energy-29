@@ -13,51 +13,24 @@
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
+  width: 28px;
+  height: 22px;
+  background-color: #666666;
 
   &--vkontakte {
-    background-image: url("../img/vkontakte.svg");
-
-    &:hover::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      mask-image: url("../img/vkontakte.svg");
-      width: 28px;
-      height: 22px;
-      background-color: #68b738;
-    }
+    mask-image: url("../img/vkontakte.svg");
   }
 
   &--youtube {
-    background-image: url("../img/youtube.svg");
-
-    &:hover::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      mask-image: url("../img/youtube.svg");
-      width: 28px;
-      height: 22px;
-      background-color: #68b738;
-    }
+    mask-image: url("../img/youtube.svg");
   }
 
   &--telegram {
-    background-image: url("../img/telegram.svg");
+    mask-image: url("../img/telegram.svg");
+  }
 
-    &:hover::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      mask-image: url("../img/telegram.svg");
-      width: 28px;
-      height: 22px;
-      background-color: #68b738;
-    }
+  &:hover {
+    background-color: #68b738;
   }
 
   &:active {

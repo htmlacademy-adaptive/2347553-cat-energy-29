@@ -63,9 +63,6 @@
   padding: 7px 0;
   display: block;
   text-align: start;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: right;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -73,7 +70,7 @@
     width: 168px;
   }
 
-  &:hover::after {
+  &::after {
     content: "";
     position: absolute;
     top: 0;
@@ -81,6 +78,10 @@
     mask-image: url("../img/htmlacademy.svg");
     width: 27px;
     height: 34px;
+    background-color: #666666;
+  }
+
+  &:hover::after {
     background-color: #68b738;
   }
 
