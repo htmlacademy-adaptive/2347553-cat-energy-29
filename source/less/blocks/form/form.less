@@ -293,6 +293,8 @@
     top: 50%;
     transform: translateY(-50%);
     right: 12px;
+    --email-color: #000000;
+    --phone-color: #000000;
 
     @media (min-width: @tablet-width) {
       right: 14px;
@@ -328,11 +330,21 @@
   &:focus-visible {
     border-color: #ffffff;
     outline: 2px solid #444444;
+
+    & + svg {
+      --email-color: #68b738;
+      --phone-color: #68b738;
+    }
   }
 
   &:invalid {
     border-color: #ffffff;
     outline: 2px solid #ff8282;
+
+    & + svg {
+      --email-color: #ff8282;
+      --phone-color: #ff8282;
+    }
   }
 }
 
