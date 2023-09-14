@@ -13,17 +13,24 @@
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
+  width: 28px;
+  height: 22px;
+  background-color: #666666;
 
   &--vkontakte {
-    background-image: url("../img/vkontakte.svg");
+    mask-image: url("../img/sprite.svg#icon-vkontakte");
   }
 
   &--youtube {
-    background-image: url("../img/youtube.svg");
+    mask-image: url("../img/sprite.svg#icon-youtube");
   }
 
   &--telegram {
-    background-image: url("../img/telegram.svg");
+    mask-image: url("../img/sprite.svg#icon-telegram");
+  }
+
+  &:hover {
+    background-color: #68b738;
   }
 
   &:active {

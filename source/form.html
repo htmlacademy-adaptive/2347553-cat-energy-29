@@ -6,18 +6,19 @@
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="images/favicons/apple-icon-180x180.png">
+    <link rel="icon" href="img/favicons/favicon-32x32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.json">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-img-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-img-tablet.svg">
+          <source media="(min-width: 1440px)" srcset="img/logo-img-desktop.svg" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-img-tablet.svg" width="60" height="50">
           <img class="main-header__logo--img" src="img/logo-img-mobile.svg" width="33" height="38" alt="">
         </picture>
-        <img class="main-header__logo--text" src="img/logo-text.svg" width="101" height="18" alt="">
+        <img class="main-header__logo--text" src="img/logo-text-header.svg" width="101" height="18" alt="">
         <span class="visually-hidden">Логотип магазина Кэт Энерджи.</span>
       </a>
       <nav class="main-nav main-nav--nojs">
@@ -102,13 +103,19 @@
             <li class="form__item">
               <label class="form__label">
                 E-mail:*
-                <input class="form__input form__input--email" type="email" name="email" value="kuklachev@gmail.com" required>
+                <input class="form__input" type="email" name="email" value="kuklachev@gmail.com" required>
+                <svg width="20" height="20">
+                  <use xlink:href="../img/sprite.svg#icon-email"></use>
+                </svg>
               </label>
             </li>
             <li class="form__item">
               <label class="form__label">
                 Телефон:*
-                <input class="form__input form__input--tel" type="tel" name="phone" value="8 (960) 900-60-90" required>
+                <input class="form__input" type="tel" name="phone" value="8 (960) 900-60-90" required>
+                <svg width="20" height="20">
+                  <use xlink:href="../img/sprite.svg#icon-phone"></use>
+                </svg>
               </label>
             </li>
           </ul>
@@ -175,7 +182,7 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo-link" href="index.html">
-          <img class="main-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип магазина Кэт Энерджи.">
+          <img class="main-footer__logo" src="img/logo-text-footer.svg" width="128" height="24" alt="">
         </a>
         <ul class="main-footer__social social">
           <li class="social__item">
