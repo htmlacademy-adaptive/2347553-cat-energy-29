@@ -207,8 +207,8 @@
   &:hover {
     background-color: #68b738;
 
-    .example__range-toggle {
-      background-image: url("../img/sprite.svg#range-toggle-2");
+    & .example__range-toggle svg {
+      --toggle-color: #68b738;
     }
   }
 
@@ -218,11 +218,9 @@
 }
 
 .example__range-toggle {
-  background-image: url("../img/sprite.svg#range-toggle");
   background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
   position: absolute;
+  padding: 0;
   left: -18px;
   top: 50%;
   transform: translateY(-50%);
@@ -230,4 +228,8 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+
+  svg {
+    --toggle-color: #666666;
+  }
 }
