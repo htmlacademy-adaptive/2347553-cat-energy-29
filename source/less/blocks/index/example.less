@@ -14,6 +14,15 @@
       bottom: 0;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    background-color: #eaeaea;
+    position: relative;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .example__wrapper {
@@ -28,7 +37,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px 75px;
+    padding: 0 0 75px;
   }
 }
 
@@ -40,7 +49,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 146px;
+    padding: 0 110px 76px;
+    margin-bottom: 70px;
+    background-color: #ffffff;
   }
 }
 
@@ -53,8 +64,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 432px;
+    max-width: 546px;
     margin-bottom: 69px;
+    padding-left: 110px;
   }
 }
 
@@ -81,6 +93,7 @@
     grid-template-columns: 162px 162px;
     justify-content: start;
     margin-bottom: 0;
+    padding-left: 110px;
     column-gap: 42px;
     row-gap: 60px;
   }
@@ -180,7 +193,7 @@
   @media (min-width: @desktop-width) {
     position: absolute;
     right: 110px;
-    bottom: 85px;
+    top: 0;
   }
 }
 
@@ -199,9 +212,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    bottom: 85px;
+    bottom: auto;
     left: auto;
     right: 388px;
+    top: 0;
   }
 
   &:hover {
