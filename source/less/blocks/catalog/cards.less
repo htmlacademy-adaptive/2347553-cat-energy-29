@@ -1,6 +1,6 @@
 .cards__item {
   padding: 20px;
-  padding-bottom: 19px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #ebebeb;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -22,11 +22,11 @@
   }
 
   &--more {
-    padding-top: 70px;
+    padding-top: 78px;
     background-image: url("../img/sprite.svg#icon-plus");
     background-size: 30px 30px;
     background-repeat: no-repeat;
-    background-position: top 17px center;
+    background-position: top 25px center;
     row-gap: 0;
 
     .cards__title {
@@ -52,15 +52,23 @@
         margin-bottom: 82px;
         text-align: center;
       }
+
+      @media (min-width: @desktop-width) {
+        margin-bottom: 90px;
+      }
     }
 
     @media (min-width: @tablet-width) {
       margin-top: 82px;
-      padding-top: 160px;
+      padding-top: 158px;
       background-position: top 50px center;
       background-size: 60px 60px;
       align-items: start;
       border: 2px solid #f2f2f2;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 149px;
     }
 
     .cards__button {
@@ -166,12 +174,24 @@
     padding-bottom: 4px;
     border-bottom: 1px solid #cdcdcd;
   }
+
+  @media (min-width: @desktop-width) {
+    &:last-of-type {
+      padding-bottom: 10px;
+    }
+  }
 }
 
 .cards__option {
   @media (min-width: @tablet-width) {
     padding-bottom: 4px;
     border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: @desktop-width) {
+    &:last-of-type {
+      padding-bottom: 10px;
+    }
   }
 }
 

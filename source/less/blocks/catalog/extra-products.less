@@ -1,9 +1,9 @@
 .extra-products {
-  padding-top: 25px;
+  padding-top: 28px;
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
-    padding: 70px 0 75px;
+    padding: 68px 0 75px;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,15 +22,9 @@
   color: #000000;
   margin: 0;
   margin-bottom: 36px;
+  padding-left: 20px;
   display: flex;
   gap: 20px;
-
-  &::before {
-    content: "";
-    width: calc(50% - 160px);
-    height: 15px;
-    border-bottom: 2px solid #68b738;
-  }
 
   &::after {
     content: "";
@@ -44,15 +38,18 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 79px;
+    padding-left: 0;
     gap: 40px;
 
     &::before {
+      content: "";
       width: calc(50% - 354px);
-      height: 24px;
+      height: 22px;
+      border-bottom: 2px solid #68b738;
     }
 
     &::after {
-      height: 24px;
+      height: 22px;
     }
   }
 

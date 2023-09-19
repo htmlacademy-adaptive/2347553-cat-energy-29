@@ -11,7 +11,6 @@
 
   @media (min-width: @tablet-width) {
     padding: 60px 70px;
-    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
@@ -31,7 +30,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
-  max-width: 140px;
+  min-width: 140px;
+  max-width: 185px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
@@ -54,6 +54,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
   }
 }
 
