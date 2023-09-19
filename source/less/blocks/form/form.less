@@ -1,7 +1,7 @@
 .form {
   background-color: #ffffff;
   padding: 39px 0 32px;
-  font-family: "Oswald", serif;
+  font-family: "Oswald", "Arial", serif;
   font-size: 16px;
 
   @media (min-width: @tablet-width) {
@@ -41,6 +41,7 @@
 
   &--programs {
     padding: 22px 20px 19px;
+    border-bottom: 1px solid #d9d9d9;
 
     .form__item {
       margin-bottom: 13px;
@@ -82,9 +83,11 @@
 
     .form__title {
       margin-bottom: 35px;
+      padding-left: 20px;
 
       @media (min-width: @tablet-width) {
         margin-bottom: 76px;
+        padding: 0;
       }
     }
 
@@ -112,9 +115,11 @@
   &--comment {
     .form__title {
       margin-bottom: 38px;
+      padding-left: 20px;
 
       @media (min-width: @tablet-width) {
         margin-bottom: 87px;
+        padding: 0;
       }
 
       @media (min-width: @desktop-width) {
@@ -160,9 +165,11 @@
 
     .form__title {
       margin-bottom: 34px;
+      padding-left: 20px;
 
       @media (min-width: @tablet-width) {
         margin-bottom: 57px;
+        padding: 0;
       }
     }
 
@@ -307,7 +314,7 @@
 }
 
 .form__input {
-  font-family: "Oswald", serif;
+  font-family: "Oswald", "Arial", serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -346,6 +353,15 @@
       --phone-color: #ff8282;
     }
   }
+}
+
+.form__input::-webkit-outer-spin-button,
+.form__input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.form__input[type="number"] {
+  appearance: textfield;
 }
 
 .form__text {
@@ -408,7 +424,7 @@
 }
 
 .form__textarea {
-  font-family: "Oswald", serif;
+  font-family: "Oswald", "Arial", serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -446,7 +462,7 @@
 }
 
 .form__footnote {
-  font-family: "Lato", serif;
+  font-family: "Lato", "Arial", serif;
   font-size: 14px;
   line-height: 16px;
   color: #000000;
